@@ -15,7 +15,7 @@ enter.addEventListener('keydown', (e) => { // Escucha el evento keydown y ejecut
 function search() {
   const searchTerm = enter.value.toUpperCase(); // Convertir la búsqueda a mayúsculas
   // Cargar y analizar el archivo JSON alojado en la web
-  const url = 'https://jack-dev02.github.io/Jack_dev02.github.io//data/data.json';
+  const url = 'https://itachi2o.github.io/itachi2o.github.io//data/data.json';
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
