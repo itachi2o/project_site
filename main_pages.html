@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main_pages.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index_style.css">
+    <script defer src="./main-js/app.js"></script>
+    <script defer src="./assets/script/bootstrap.bundle.min.js"></script>
+    <script defer src="./main-js/main-pages.js"></script>
+    <script defer type="module" src="./main-js/panel.js"></script>
+</head>
+
+<body>
+     <!-- Contenedor Principal -->
+    <div class="main-input container-fluid">
+         <div class="container">
+            <h1 class="titulo"></h1>
+                <div class="row input-1">
+                    <div class="input col align-self-center">
+                        <input type="text" id="search-input" class="form-control" id="floatingInputValue" placeholder="Buscar"> 
+                        <label for="floatingInputValue"></label>
+                    </div>
+                </div>
+                 <!-- Boton buscar -->
+                <div class="row">
+                    <div class="btn col align-self-center">
+                        <button type="button" class="buscar btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Voy a tener suerte</button>
+                    </div>
+                </div>         
+        </div>
+    </div>
+        <!-- Tarjeta donde se insertan los resultados  -->
+  <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-theme="blue" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color: #712cf9;">
+            <h1 class="tituloSecundary modal-title fs-5" id="staticBackdropLabel">Lo siento, intenta de nuevo!!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="texto modal-body">
+            No hay resultados...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
